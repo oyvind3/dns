@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: list records
         run: |
-          curl -u "${{ secrets.DOMAIN_USERNAME}}:${{ secrets.DOMAIN_PASSWORD }} \
+          curl -u "${{ secrets.DOMAIN_USERNAME}} : ${{ secrets.DOMAIN_PASSWORD }} \
           curl -X GET https://api.domeneshop.no/v0/domains
 
       # Runs a set of commands using the runners shell
