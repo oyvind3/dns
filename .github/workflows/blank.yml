@@ -19,4 +19,6 @@ jobs:
     steps:
       - name: list records
         run: |
-          curl -X GET https://api.domeneshop.no/v0/domains"
+          curl --location --request GET 'https://api.domeneshop.no/v0/domains' \
+               --header ${{ secrets.auth }}
+    
