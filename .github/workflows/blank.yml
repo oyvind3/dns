@@ -19,8 +19,10 @@ jobs:
     steps:
       - name: list records
         run: |
-          curl --location --request GET 'https://api.domeneshop.no/v0/domains' | jq \
+          curl --location --request GET 'https://api.domeneshop.no/v0/domains'\
                --header ${{ secrets.auth }} \
+
+     
                
                
     
