@@ -42,7 +42,6 @@ jobs:
      steps:
        - name: run bash
          run: |
-          sudo apt-get install dnsutils \ 
           dig -v \
           dig resume.finsrud.cloud +short \
           dig +short -t srv resume.finsrud.cloud && echo "got answer" 
