@@ -39,8 +39,7 @@ jobs:
        - name: run bash
          run: |
           dig -v \
-          dig resume.finsrud.cloud +short -t srv && "answer given" \
-          dig +short -t srv resume3.finsrud.cloud && echo "got answer"
+          sleep 300
          shell: bash
 
          
